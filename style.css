@@ -16,3 +16,45 @@ body {
 
   color: white;
 }
+
+/* LOADER FULL SCREEN */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #000; /* solid background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* CENTER CONTENT */
+.loader-content {
+  text-align: center;
+}
+
+/* SPINNING ICON */
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 4px solid rgba(255,255,255,0.2);
+  border-top: 4px solid #00f0ff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+/* NAME TEXT */
+.loader-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #00f0ff;
+}
+
+/* SPIN ANIMATION */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
