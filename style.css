@@ -3,11 +3,16 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 
+  height: 100vh;
+
+  background-image: url("assets/bg.png");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* center image */
+  background-repeat: no-repeat;  /* no repeating */
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 
-  background-color: #0f172a; /* dark */
   color: white;
 }
